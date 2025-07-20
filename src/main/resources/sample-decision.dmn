@@ -109,14 +109,10 @@
       </rule>
     </decisionTable>
   </decision>
-  <decision id="Decision_1us4du2" name="Black list Decision" />
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="DMNDiagram_1mq5mzv">
       <dmndi:DMNShape id="DMNShape_1ceu93n" dmnElementRef="approvalDecision">
         <dc:Bounds height="80" width="180" x="260" y="120" />
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="DMNShape_1rzt8mc" dmnElementRef="Decision_1us4du2">
-        <dc:Bounds height="80" width="180" x="260" y="250" />
       </dmndi:DMNShape>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
