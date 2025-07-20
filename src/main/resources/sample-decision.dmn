@@ -6,9 +6,6 @@
   <inputData id="income" name="income">
     <variable id="incomeVar" name="income" typeRef="number" />
   </inputData>
-  <inputData id="action" name="action">
-    <variable id="actionVar" name="action" typeRef="string" />
-  </inputData>
   <decision id="approvalDecision" name="Approval Decision">
     <variable id="approvalResult" name="Approval Decision" typeRef="boolean" />
     <informationRequirement id="req1">
@@ -16,9 +13,6 @@
     </informationRequirement>
     <informationRequirement id="req2">
       <requiredInput href="#income" />
-    </informationRequirement>
-    <informationRequirement id="req3">
-      <requiredInput href="#action" />
     </informationRequirement>
     <decisionTable id="decisionTable" hitPolicy="FIRST">
       <input id="ageInput" label="Age">
@@ -31,11 +25,6 @@
           <text>income</text>
         </inputExpression>
       </input>
-      <input id="InputClause_16fubrl" label="Action">
-        <inputExpression id="LiteralExpression_1u41v93" typeRef="string">
-          <text>action</text>
-        </inputExpression>
-      </input>
       <output id="approvalOutput" label="Approved" typeRef="boolean" />
       <rule id="rule1">
         <inputEntry id="rule1_age">
@@ -43,9 +32,6 @@
         </inputEntry>
         <inputEntry id="rule1_income">
           <text>&gt;= 30000</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0hq4ny2">
-          <text>-</text>
         </inputEntry>
         <outputEntry id="rule1_output">
           <text>true</text>
@@ -58,9 +44,6 @@
         <inputEntry id="rule2_income">
           <text>&gt;= 50000</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0arkrkj">
-          <text>-</text>
-        </inputEntry>
         <outputEntry id="rule2_output">
           <text>true</text>
         </outputEntry>
@@ -71,9 +54,6 @@
         </inputEntry>
         <inputEntry id="rule3_income">
           <text>= 49900</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0cag2a4">
-          <text>-</text>
         </inputEntry>
         <outputEntry id="rule3_output">
           <text>true</text>
@@ -86,9 +66,6 @@
         <inputEntry id="UnaryTests_08a58g9">
           <text>&lt; 50000</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0edzcya">
-          <text>-</text>
-        </inputEntry>
         <outputEntry id="LiteralExpression_1pe6ar3">
           <text>false</text>
         </outputEntry>
@@ -99,9 +76,6 @@
         </inputEntry>
         <inputEntry id="UnaryTests_1e3iedj">
           <text>-</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1w5rubv">
-          <text>"changeUp"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1c59ed4">
           <text>true</text>
